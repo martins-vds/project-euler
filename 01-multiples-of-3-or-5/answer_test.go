@@ -22,3 +22,7 @@ func TestAnswer(t *testing.T) {
 		}
 	}
 }
+
+func BenchmarkAnswer(b *testing.B) {
+	answer(1000)
+}
