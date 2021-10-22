@@ -19,16 +19,6 @@ func answer(number int) int {
 	return maxFactor()
 }
 
-func shouldIgnore(number int) bool {
-	for factor := range factors {
-		if number%factor == 0 {
-			return true
-		}
-	}
-
-	return false
-}
-
 func maxFactor() int {
 	max := 0
 
