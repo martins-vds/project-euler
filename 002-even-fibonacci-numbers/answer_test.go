@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-func TestFib(t *testing.T) {
+func TestAnswer(t *testing.T) {
 	cases := []struct {
 		nthTerm int
 		sum     int
