@@ -1,5 +1,7 @@
 # Project Euler
 
+[![Answers](https://github.com/martins-vds/project-euler/actions/workflows/ci.yml/badge.svg)](https://github.com/martins-vds/project-euler/actions/workflows/ci.yml)
+
 Answers written in Go for problems on [Project Euler](https://projecteuler.net):
 
 1. [Multiple of 3 or 5](https://github.com/martins-vds/project-euler/blob/master/001-multiples-of-3-or-5/README.md)
