@@ -1,6 +1,6 @@
 # Project Euler
 
-[![Answers](https://github.com/martins-vds/project-euler/actions/workflows/ci.yml/badge.svg)](https://github.com/martins-vds/project-euler/actions/workflows/ci.yml)
+[![Validate Answers](https://github.com/martins-vds/project-euler/actions/workflows/ci.yml/badge.svg)](https://github.com/martins-vds/project-euler/actions/workflows/ci.yml)
 
 Answers written in Go for problems on [Project Euler](https://projecteuler.net):
 
