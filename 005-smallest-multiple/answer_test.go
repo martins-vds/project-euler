@@ -10,6 +10,7 @@ func TestAnswer(t *testing.T) {
 		smallestNumber int
 	}{
 		{10, 2520},
+		{20, 232792560},
 	}
 
 	for _, c := range cases {
@@ -23,5 +24,5 @@ func TestAnswer(t *testing.T) {
 }
 
 func BenchmarkAnswer(b *testing.B) {
-	answer(10)
+	answer(20)
 }

@@ -1,28 +1,29 @@
 package projecteuler
 
-import "fmt"
-
 func answer(limit int) int {
-	smallestMultiple := 1 * 2 * 3
+	smallestMultiple := 1
 
-	for number := 4; number <= limit; number++ {
+	for number := 2; number <= limit; number++ {
 		remainder := smallestMultiple % number
-		if remainder != 0 {
-			fmt.Print(number)
-			fmt.Print(" ")
-			fmt.Print(smallestMultiple)
-			fmt.Print(" ")
-			fmt.Print(smallestMultiple / number)
-			fmt.Print(" ")
-			fmt.Println(remainder)
 
-			if number%2 != 0 {
-				smallestMultiple = (smallestMultiple * number)
+		if remainder != 0 {
+			if isPrime(number) {
+				smallestMultiple *= number
 			} else {
-				smallestMultiple = (smallestMultiple * remainder)
+				smallestMultiple *= number / remainder
 			}
 		}
 	}
 
 	return smallestMultiple
+}
+
+func isPrime(number int) bool {
+	for i := 2; i <= number/2; i++ {
+		if number%i == 0 {
+			return false
+		}
+	}
+
+	return true
 }
